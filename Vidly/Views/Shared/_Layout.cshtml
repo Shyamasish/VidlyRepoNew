@@ -7,10 +7,12 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+
     @Html.Partial("_NavBar") @*By default teh partial view will have default model of the current view
         but we can define specific model for our partial view
         by giving another parameter @Html.Partial("_NavBar",Model.Movie)
                                  use the namespace @model Vidly.ViewModel.RandomMovieViewModel*@
+    @Html.Partial("_LoginPartial")
     <div class="container body-content">
         @RenderBody()
         <hr />
